@@ -34,8 +34,8 @@ def translate_words_file(input_file, output_file, delay=0.1):
         print(f"An error occurred: {e}")
 
 def main():
-    input_filename = "english_words.txt"
-    output_filename = "french_words.txt"
+    input_filename = "e_w.txt"
+    output_filename = "f_w.txt"
     
     if len(sys.argv) >= 2:
         input_filename = sys.argv[1]
