@@ -14,7 +14,7 @@ def translate_words_file(input_file, output_file, delay=0.1):
         translated_words = []
         for i, word in enumerate(words, 1):
             try:
-                translation = translator.translate(word, src='en', dest='fr')
+                translation = translator.translate(word, src='en', dest='fr') #en and fr are the language codes change to whatever to translate from one to other
                 translated_words.append(translation.text)
                 print(f"({i}/{len(words)}) {word} -> {translation.text}")
                 time.sleep(delay)
